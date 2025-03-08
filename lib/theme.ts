@@ -1,5 +1,7 @@
+
 import { useTheme } from 'next-themes'
 import { useEffect, useRef, useState } from 'react'
+import { flushSync } from 'react-dom'
 
 const isBrowser = typeof window !== 'undefined'
 
@@ -88,7 +90,7 @@ export const useModeAnimation = (props?: ReactThemeSwitchAnimationProps): ReactT
   const toggleSwitchTheme = async () => {
     if (
       !ref.current ||
-      !(document as unknown as { startViewTransition: () => Promise<void> }).startViewTransition ||
+      !(document as any).startViewTransition ||
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
       setIsDarkMode((isDarkMode) => !isDarkMode)
@@ -152,6 +154,12 @@ export const useModeAnimation = (props?: ReactThemeSwitchAnimationProps): ReactT
       `
       document.head.appendChild(styleElement)
     }
+
+    await (document as any).startViewTransition(() => {
+      flushSync(() => {
+        setIsDarkMode((isDarkMode) => !isDarkMode)
+      })
+    }).ready
 
     if (animationType === ThemeAnimationType.CIRCLE) {
       document.documentElement.animate(
