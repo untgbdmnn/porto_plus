@@ -89,7 +89,7 @@ export const useModeAnimation = (props?: ReactThemeSwitchAnimationProps): ReactT
   const toggleSwitchTheme = async () => {
     if (
       !ref.current ||
-      !(document as any).startViewTransition ||
+      !(document as unknown as { startViewTransition: () => Promise<void> }).startViewTransition ||
       window.matchMedia('(prefers-reduced-motion: reduce)').matches
     ) {
       setIsDarkMode((isDarkMode) => !isDarkMode)
@@ -154,11 +154,11 @@ export const useModeAnimation = (props?: ReactThemeSwitchAnimationProps): ReactT
       document.head.appendChild(styleElement)
     }
 
-    await (document as any).startViewTransition(() => {
+    const transition = (document as unknown as { startViewTransition: (callback: () => void) => Promise<{ ready: Promise<void> }> }).startViewTransition(() => {
       flushSync(() => {
         setIsDarkMode((isDarkMode) => !isDarkMode)
       })
-    }).ready
+    })
 
     if (animationType === ThemeAnimationType.CIRCLE) {
       document.documentElement.animate(

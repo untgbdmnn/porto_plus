@@ -1,9 +1,9 @@
 "use client"
 
 import Link from 'next/link'
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { BiFoodMenu } from "react-icons/bi";
-import { Button, buttonVariants } from './ui/button';
+import { Button } from './ui/button';
 import { useTheme } from 'next-themes';
 import SwitchDarkMode from './switch-theme';
 import { ThemeAnimationType } from '@/lib/theme';
@@ -18,6 +18,8 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
     const { theme } = useTheme();
     const [isDarkMode, setIsDarkMode] = useState(theme === 'dark');
     const [sheet, setSheet] = useState(false);
+
+    const pathname = usePathname();
 
     const handleDarkModeChange = (isDark: boolean) => {
         setIsDarkMode(isDark);
@@ -103,7 +105,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                         <div className='w-full px-10'>
                             <div className='flex flex-col w-full gap-7'>
                                 {menuItems.map((item, index) => {
-                                    const pathname = usePathname();
                                     const isActive = pathname === item.href;
                                     return (
                                         <Link key={index} href={item.href} className={`${isActive ? "font-black border-l-2 border-black pl-5" : "hover:pl-3"} text-5xl py-2 transition-transform duration-500 ease-in-out`} >{item.label}</Link>
