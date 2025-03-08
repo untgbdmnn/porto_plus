@@ -20,7 +20,7 @@ const SwitchDarkMode: React.FC<SwitchDarkModeProps> = ({
 }) => {
     const [mounted, setMounted] = useState(false);
     const { theme } = useTheme();
-    const { ref, toggleSwitchTheme, isDarkMode } = useModeAnimation({
+    const { ref, toggleSwitchTheme } = useModeAnimation({
         ...props,
         isDarkMode: externalDarkMode,
         onDarkModeChange,

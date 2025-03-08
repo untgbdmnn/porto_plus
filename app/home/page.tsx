@@ -1,9 +1,14 @@
-import React from 'react'
-import { useLocale } from 'next-intl';
+"use client"
+
+import Gretings from '@/components/gretings';
+import React, { useState, useEffect } from 'react';
 
 export default function HomePage() {
-  const locale = useLocale()
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <div className=''>HomePage - {locale}</div>
-  )
+    <div className=''>
+      <div>sadas</div>
+    </div>
+  );
 }
