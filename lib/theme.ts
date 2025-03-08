@@ -1,6 +1,5 @@
 import { useTheme } from 'next-themes'
 import { useEffect, useRef, useState } from 'react'
-import { flushSync } from 'react-dom'
 
 const isBrowser = typeof window !== 'undefined'
 
