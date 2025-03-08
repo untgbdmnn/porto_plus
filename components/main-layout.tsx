@@ -70,6 +70,13 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                             {isHovered ? "Untung Budiman" : "Porto+"}
                         </Link>
                         <div className='flex flex-row items-center justify-between gap-2'>
+                            <div>
+                                {menuItems.map((item, index) => {
+                                    return (
+                                        <Link key={index} href={item.href}>{item.label}</Link>
+                                    )
+                                })}
+                            </div>
                             <div className={`flex items-center justify-between gap-2.5 ${isScrolled ? 'hidden' : ''}`}>
                                 <SwitchLang />
                                 <SwitchDarkMode
