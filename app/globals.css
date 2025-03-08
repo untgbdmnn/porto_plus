@@ -124,3 +124,9 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .icon-logo {
+    @apply text-xl font-bold;
+  }
+}
