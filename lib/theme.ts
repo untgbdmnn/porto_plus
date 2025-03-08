@@ -154,12 +154,6 @@ export const useModeAnimation = (props?: ReactThemeSwitchAnimationProps): ReactT
       document.head.appendChild(styleElement)
     }
 
-    const transition = (document as unknown as { startViewTransition: (callback: () => void) => Promise<{ ready: Promise<void> }> }).startViewTransition(() => {
-      flushSync(() => {
-        setIsDarkMode((isDarkMode) => !isDarkMode)
-      })
-    })
-
     if (animationType === ThemeAnimationType.CIRCLE) {
       document.documentElement.animate(
         {
