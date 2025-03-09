@@ -1,7 +1,6 @@
 "use client"
 
 import { GlobeDemo } from '@/components/hero-globe';
-import { ShinyButton } from '@/components/magicui/shiny-button';
 import RotatingText from '@/components/ui/RotatingText';
 import { useTranslations } from 'next-intl';
 import React from 'react';
