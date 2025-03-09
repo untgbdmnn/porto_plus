@@ -33,7 +33,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
                 initial={{ y: '100%' }}
                 animate={isAnimating ? { y: '0%' } : { y: '100%' }}
                 transition={{
-                    duration: 1,
+                    duration: 0.4,
                     ease: [0.22, 1, 0.36, 1],
                 }}
             >
