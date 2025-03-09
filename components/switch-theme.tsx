@@ -24,7 +24,7 @@ const SwitchDarkMode: React.FC<SwitchDarkModeProps> = ({
         ...props,
         isDarkMode: externalDarkMode,
         onDarkModeChange,
-        duration: 1500,
+        duration: 1000,
         easing: 'ease-in-out',
     });
 
