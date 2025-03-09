@@ -1,5 +1,26 @@
 {
     "Hero-Section": {
-        "hero-title": "By Combining Creative Ideas and the Latest Technology, Bringing Your Vision to the Screen with Seamless Web and Mobile Integration"
+        "hero-title": "By Combining Creative Ideas and the Latest Technology, Bringing Your Vision to the Screen with Seamless Web and Mobile Integration",
+        "about-desc": "I am a vocational school graduate with experience and knowledge in the IT field. Currently, I work as a Web Developer, developing and maintaining web applications to enhance functionality and user experience.",
+        "about-subdesc": "The combination of my passion for design, coding, and interaction places me in a unique position in the world of web design."
+    },
+    "About-Page": {
+        "slogan": "Building Digital Dreams, One Code at a Time.",
+        "aboutMe": "About Me",
+        "educationex": "Education",
+        "experienceex": "Experience",
+        "sekarang": "Present",
+        "description": {
+            "aboutme": "I am a graduate of vocational school with a major in Computer and Network Engineering, achieving satisfactory results. During my studies, I participated in an internship program in the field of fiber optic networking, which deepened my understanding of network infrastructure and provided practical experience.",
+            "currentwork": "Currently, I am a Junior Web Developer at PT Belanja Pasti Indonesia. I am responsible for the development and maintenance of web applications, focusing on intuitive user interface design and performance optimization. I continuously explore new technologies to enhance my skills in the ever-evolving world of web development.",
+            "tjkt": "Computer Network and Telecommunications Engineering",
+            "educatedesc": "I specialized in Network System Administration during my education, focusing on network device configuration, troubleshooting, and system management. Additionally, I studied Network Infrastructure Administration and Network Service Technology. I further honed my skills by participating in the 2023 Yogyakarta Provincial Student Competency Competition (LKS) for IT Network System Administration, which deepened my technical knowledge and practical skills in this field.",
+            "webdev": "Web Developer",
+            "webdevdesc": "I have actively contributed to the development of various web projects. To date, I have been involved in three major projects, primarily focusing on front-end development, implementing user interfaces based on designs from the creative team. Additionally, I have experience in managing databases, integrating APIs, and handling front-end tasks to ensure cohesive and functional web solutions."
+        },
+        "pengembanganweb": "Web Development",
+        "pengembanganbackend": "Back-End Development & Database",
+        "pemeliharanweb": "Website Maintenance & Repair",
+        "saya-dapat-membantu-anda":"Effective Web Solutions – I'm Here to Assist!"
     }
 }
