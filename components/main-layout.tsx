@@ -88,7 +88,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                                 </div>
                                 {/* MenuButton */}
                                 {!sheet && (
-                                    <Button size="icon" className={`cursor-pointer transition-all duration-1000 ease-in-out ${isScrolled ? 'fixed top-5 right-5' : ''}`} onClick={() => setSheet(true)} >
+                                    <Button size="icon" className={`cursor-pointer transition-all z-[99] duration-1000 ease-in-out ${isScrolled ? 'fixed top-5 right-5' : ''}`} onClick={() => setSheet(true)} >
                                         <BiFoodMenu className='size-4' />
                                     </Button>
                                 )}
@@ -98,7 +98,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                     <PageTransition>
                         {children}
                     </PageTransition>
-                    <div className='fixed w-full bottom-0 py-1 text-sm text-center'>
+                    <div className='fixed bg-background w-full bottom-0 py-1 text-sm text-center'>
                         &copy; 2025 - Untung Budiman | Porto+
                     </div>
                     <Sheet open={sheet} onOpenChange={() => setSheet(!sheet)}>

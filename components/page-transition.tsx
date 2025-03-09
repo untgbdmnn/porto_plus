@@ -29,7 +29,7 @@ export default function PageTransition({ children }: { children: React.ReactNode
         <div className='px-3 lg:px-5'>
             {children}
             <motion.div
-                className='fixed inset-0 top-0 left-0 w-full h-screen origin-bottom bg-foreground z-50'
+                className='fixed inset-0 top-0 left-0 w-full h-screen origin-bottom bg-foreground z-[99999999]'
                 initial={{ y: '100%' }}
                 animate={isAnimating ? { y: '0%' } : { y: '100%' }}
                 transition={{

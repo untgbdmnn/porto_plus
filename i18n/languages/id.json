@@ -1,5 +1,26 @@
 {
     "Hero-Section": {
-        "hero-title": "Dengan Menggabungkan Ide Kreatif dan Teknologi Terkini, Membawa Visi Anda ke Layar dengan Integrasi Web dan Mobile yang Mulus"
+        "hero-title": "Dengan Menggabungkan Ide Kreatif dan Teknologi Terkini, Membawa Visi Anda ke Layar dengan Integrasi Web dan Mobile yang Mulus",
+        "about-desc": "Saya adalah lulusan SMK dengan pengalaman dan pengetahuan di bidang IT. Saat ini, saya bekerja sebagai Web Developer, mengembangkan serta memelihara aplikasi web untuk meningkatkan fungsionalitas dan pengalaman pengguna.",
+        "about-subdesc": "Kombinasi antara passion saya dalam desain, kode, dan interaksi menempatkan saya pada posisi unik di dunia desain web."
+    },
+    "About-Page": {
+        "slogan": "Membangun Impian Digital, Satu Kode demi Satu Kode.",
+        "aboutMe": "Tentang Saya",
+        "educationex": "Pendidikan",
+        "experienceex": "Pengalaman",
+        "sekarang": "Sekarang",
+        "description": {
+            "aboutme": "Saya lulusan SMK jurusan Teknik Komputer dan Jaringan dengan predikat memuaskan. Selama sekolah, saya mengikuti program PKL di bidang jaringan fiber optik, yang memperdalam pemahaman saya tentang infrastruktur jaringan dan memberikan pengalaman praktis.",
+            "currentwork": "Saat ini, saya adalah Junior Web Developer di PT Belanja Pasti Indonesia. Saya bertanggung jawab atas pengembangan dan pemeliharaan aplikasi web, dengan fokus pada desain antarmuka pengguna yang intuitif dan optimalisasi kinerja. Saya terus mengeksplorasi teknologi baru untuk meningkatkan keterampilan saya di dunia pengembangan web yang terus berkembang.",
+            "tjkt": "Teknik Jaringan Komputer dan Telekomunikasi",
+            "educatedesc": "Saya mengkhususkan diri dalam Administrasi Sistem Jaringan selama pendidikan, dengan fokus pada konfigurasi perangkat jaringan, pemecahan masalah, dan manajemen sistem. Selain itu, saya juga mempelajari Administrasi Infrastruktur Jaringan dan Teknologi Layanan Jaringan. Saya semakin mengasah keahlian saya dengan berpartisipasi dalam Lomba Kompetensi Siswa (LKS) Provinsi Yogyakarta untuk Administrasi Sistem Jaringan IT pada tahun 2023, yang memperdalam pengetahuan teknis dan keterampilan praktis saya di bidang ini.",
+            "webdev": "Pengembang Web",
+            "webdevdesc": "Saya telah berkontribusi secara aktif dalam pengembangan berbagai proyek web. Hingga saat ini, saya telah terlibat dalam tiga proyek besar, dengan fokus utama pada pengembangan front-end, mengimplementasikan antarmuka pengguna berdasarkan desain dari tim kreatif. Selain itu, saya juga memiliki pengalaman dalam mengelola database, mengintegrasikan API, serta menangani tugas front-end untuk memastikan solusi web yang terpadu dan fungsional."
+        },
+        "pengembanganweb": "Pengembangan Website",
+        "pengembanganbackend": "Pengembangan Back-End & Database",
+        "pemeliharanweb": "Pemeliharaan & Perbaikan Website",
+        "saya-dapat-membantu-anda":"Solusi Web yang Efektif, Saya Siap Membantu!"
     }
 }

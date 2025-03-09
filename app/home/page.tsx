@@ -4,11 +4,13 @@ import { GlobeDemo } from '@/components/hero-globe';
 import RotatingText from '@/components/ui/RotatingText';
 import { useTranslations } from 'next-intl';
 import React from 'react';
+import AboutSection from './about-section';
 
 export default function HomePage() {
   const t = useTranslations("Hero-Section")
   return (
     <div className=''>
+
       <GlobeDemo>
         <div className='flex flex-col items-center justify-center'>
           <h1 className='text-3xl text-center px-5 font-black select-none lg:text-5xl'>{t('hero-title')}</h1>
@@ -29,7 +31,12 @@ export default function HomePage() {
           </div>
         </div>
       </GlobeDemo>
-      <div></div>
+
+      {/* About Section */}
+      <div className='lg:py-20 sm:py-5'>
+        <AboutSection />
+      </div>
+
     </div>
   );
 }
