@@ -5,6 +5,7 @@ import RotatingText from '@/components/ui/RotatingText';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import AboutSection from './about-section';
+import SkillSection from './skill-section';
 
 export default function HomePage() {
   const t = useTranslations("Hero-Section")
@@ -35,6 +36,10 @@ export default function HomePage() {
       {/* About Section */}
       <div className='lg:py-20 sm:py-5'>
         <AboutSection />
+      </div>
+
+      <div className='lg:py-14 sm:py-5'>
+        <SkillSection />
       </div>
 
     </div>
