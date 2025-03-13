@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl';
 import React from 'react';
 import AboutSection from './about-section';
 import SkillSection from './skill-section';
+import PortoSection from './porto-section';
 
 export default function HomePage() {
   const t = useTranslations("Hero-Section")
@@ -40,6 +41,10 @@ export default function HomePage() {
 
       <div className='lg:py-14 sm:py-5'>
         <SkillSection />
+      </div>
+
+      <div className='lg:py-14 sm:py-5'>
+        <PortoSection />
       </div>
 
     </div>

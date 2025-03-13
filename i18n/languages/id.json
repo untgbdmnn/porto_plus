@@ -21,6 +21,10 @@
         "pengembanganweb": "Pengembangan Website",
         "pengembanganbackend": "Pengembangan Back-End & Database",
         "pemeliharanweb": "Pemeliharaan & Perbaikan Website",
-        "saya-dapat-membantu-anda":"Solusi Web yang Efektif, Saya Siap Membantu!"
+        "saya-dapat-membantu-anda": "Solusi Web yang Efektif, Saya Siap Membantu!"
+    },
+    "Portofolio": {
+        "desc-portofolio": "Portofolio pribadi dibangun dengan Next.js, React, dan Tailwind CSS, dilengkapi komponen UI modern dan fitur interaktif",
+        "desc-breezio": "Situs web prakiraan cuaca ini memungkinkan Anda mengakses informasi cuaca yang akurat dengan mudah dan mencari kondisi cuaca di lokasi mana pun secara cepat"
     }
 }

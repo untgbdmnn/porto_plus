@@ -21,6 +21,10 @@
         "pengembanganweb": "Web Development",
         "pengembanganbackend": "Back-End Development & Database",
         "pemeliharanweb": "Website Maintenance & Repair",
-        "saya-dapat-membantu-anda":"Effective Web Solutions – I'm Here to Assist!"
+        "saya-dapat-membantu-anda": "Effective Web Solutions – I'm Here to Assist!"
+    },
+    "Portofolio": {
+        "desc-portofolio": "Personal portfolio built with Next.js, React, and Tailwind CSS, featuring modern UI components and interactive features",
+        "desc-breezio": "This weather forecast website allows you to easily access accurate weather information and quickly search for conditions in any location"
     }
 }
