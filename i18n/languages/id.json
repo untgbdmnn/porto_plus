@@ -25,6 +25,10 @@
     },
     "Portofolio": {
         "desc-portofolio": "Portofolio pribadi dibangun dengan Next.js, React, dan Tailwind CSS, dilengkapi komponen UI modern dan fitur interaktif",
-        "desc-breezio": "Situs web prakiraan cuaca ini memungkinkan Anda mengakses informasi cuaca yang akurat dengan mudah dan mencari kondisi cuaca di lokasi mana pun secara cepat"
+        "desc-breezio": "Situs web prakiraan cuaca ini memungkinkan Anda mengakses informasi cuaca yang akurat dengan mudah dan mencari kondisi cuaca di lokasi mana pun secara cepat",
+        "desc-cvform":"Projek Formulir Curriculum Vitae memudahkan pembuatan CV profesional yang menonjol dengan mudah dan efisien",
+        "portofolioyangsayabuat":"Semua Project yang Pernah Saya Buat",
+        "descportofolioyangsayabuat":"Kumpulan Karya dan Pencapaian Saya",
+        "descportopage":"Mayoritas project yang saya kembangkan dibangun menggunakan React.js dan Tailwind CSS, dengan dukungan berbagai library komponen UI. Beberapa project juga memanfaatkan Laravel sebagai backend, serta PostgreSQL sebagai database."
     }
 }

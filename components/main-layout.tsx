@@ -98,7 +98,7 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                     <PageTransition>
                         {children}
                     </PageTransition>
-                    <div className='fixed bg-background w-full bottom-0 py-1 text-sm text-center'>
+                    <div className='fixed bg-background w-full bottom-0 py-1 text-sm text-center z-30'>
                         &copy; 2025 - Untung Budiman | Porto+
                     </div>
                     <Sheet open={sheet} onOpenChange={() => setSheet(!sheet)}>

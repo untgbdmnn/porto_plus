@@ -32,19 +32,17 @@ export default function PortoSection() {
             </div>
             <div className='flex items-center justify-center'>
                 <div className='flex flex-col items-center my-10 justify-center'>
-                    <h1 className='text-2xl font-black'>My Previous Projects</h1>
+                    <h1 className='text-2xl font-black'>My Latest Projects</h1>
                     <h2 className='text-sm font-semibold'> A Compilation of My Accomplished Projects</h2>
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 w-full gap-1'>
-                <FocusCards cards={cards} />
+            <div className='lg:px-10 px-0'>
+                <FocusCards cards={cards} className='lg:grid lg:grid-cols-2 flex flex-col lg:gap-6 gap-4' />
+                <motion.div whileHover={{ scale: 0.9 }} whileTap={{ rotate: 20 }} className='text-base pr-5 underline hover:underline-blue-500 hover:font-black transition-[font-weight,color] cursor-pointer hover:text-blue-500 my-3 w-fit'>
+                    <Link href="/portofolio" className='flex items-center justify-center gap-1'>More Projects <MoveUpRight className='size-4' /></Link>
+                </motion.div>
             </div>
-
-            <motion.div whileHover={{ scale: 0.9 }} whileTap={{ rotate: 20 }} className='text-base border border-foreground rounded-sm px-5 cursor-pointer hover:text-blue-500 transition-colors my-3 w-fit'>
-                <Link href="/portofolio" className='flex items-center justify-center gap-1'>More Projects <MoveUpRight className='size-4' /></Link>
-            </motion.div>
-
         </div>
     )
 }
