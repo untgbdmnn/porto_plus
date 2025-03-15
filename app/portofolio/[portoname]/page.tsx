@@ -1,12 +1,6 @@
 import React from 'react';
 
-type ParamsProps = {
-  params: {
-    portoname: string;
-  };
-};
-
-export default function DetailPorto({ params }: ParamsProps) {
+export default function DetailPorto({ params }: { params: { portoname: string } }) {
   const { portoname } = params;
 
   return (
