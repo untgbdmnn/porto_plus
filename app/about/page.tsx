@@ -6,6 +6,7 @@ import { useTranslations } from 'next-intl'
 import React from 'react'
 import { AboutMe, Educate, Experience } from './content';
 import { motion } from 'framer-motion'
+import { ContactFooter } from '@/components/main-layout'
 
 export default function AboutPage() {
   const t = useTranslations("About-Page");
@@ -17,9 +18,6 @@ export default function AboutPage() {
     { title: t('experienceex'), content: <Experience /> },
   ]
 
-  // const services = [
-  //   t('pengembanganweb'), t('pengembanganbackend'), t('pemeliharanweb')
-  // ]
   const services = [
     { title: t('pengembanganweb') },
     { title: t('pengembanganbackend') },
@@ -69,7 +67,9 @@ export default function AboutPage() {
           })}
         </div>
       </div>
-
+      <div className='mb-5'>
+        <ContactFooter />
+      </div>
     </div>
   )
 }
