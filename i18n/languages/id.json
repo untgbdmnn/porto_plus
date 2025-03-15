@@ -30,5 +30,11 @@
         "portofolioyangsayabuat":"Semua Project yang Pernah Saya Buat",
         "descportofolioyangsayabuat":"Kumpulan Karya dan Pencapaian Saya",
         "descportopage":"Mayoritas project yang saya kembangkan dibangun menggunakan React.js dan Tailwind CSS, dengan dukungan berbagai library komponen UI. Beberapa project juga memanfaatkan Laravel sebagai backend, serta PostgreSQL sebagai database."
+    },
+    "Kontak":{
+        "title":"Mari Membangun Sesuatu Hebat Bersama",
+        "subtitle":"Jika Anda memiliki proyek menarik atau sekadar ingin berdiskusi, saya siap mendengarkan!",
+        "kirim":"Kirim",
+        "hubungisaya":"Hubungi Saya"
     }
 }

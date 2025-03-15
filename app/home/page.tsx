@@ -7,6 +7,7 @@ import React from 'react';
 import AboutSection from './about-section';
 import SkillSection from './skill-section';
 import PortoSection from './porto-section';
+import ContactSection from './contact-section';
 
 export default function HomePage() {
   const t = useTranslations("Hero-Section")
@@ -45,6 +46,10 @@ export default function HomePage() {
 
       <div className='lg:py-14 sm:py-5'>
         <PortoSection />
+      </div>
+
+      <div className='lg:py-14 sm:py-5'>
+        <ContactSection />
       </div>
 
     </div>

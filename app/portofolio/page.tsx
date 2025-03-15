@@ -4,6 +4,7 @@ import React from 'react'
 import Portofolio from '@/assets/images/portofolio.png'
 import Breezio from '@/assets/images/brezio.png';
 import CVForm from '@/assets/images/cvform.png'
+import { ContactFooter } from '@/components/main-layout';
 
 export default function PortofolioPage() {
   const t = useTranslations("Portofolio");
@@ -39,6 +40,9 @@ export default function PortofolioPage() {
       </div>
       <div className='lg:px-5 px-0 mt-5 pb-10'>
         <FocusCards cards={cards} className='lg:grid lg:grid-cols-2 lg:gap-5 flex flex-col items-center justify-center gap-3' />
+      </div>
+      <div className='mb-5'>
+        <ContactFooter />
       </div>
     </div>
   )

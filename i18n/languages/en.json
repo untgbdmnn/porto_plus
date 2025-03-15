@@ -26,9 +26,15 @@
     "Portofolio": {
         "desc-portofolio": "Personal portfolio built with Next.js, React, and Tailwind CSS, featuring modern UI components and interactive features",
         "desc-breezio": "This weather forecast website allows you to easily access accurate weather information and quickly search for conditions in any location",
-        "desc-cvform":"The Curriculum Vitae Form project makes it easy to create standout professional CVs effortlessly",
-        "portofolioyangsayabuat":"All Projects I Have Ever Made",
-        "descportofolioyangsayabuat":"A Collection of My Works and Achievements",
-        "descportopage":"Most of the projects I’ve developed are built using React.js and Tailwind CSS, supported by various UI component libraries. Some projects also leverage Laravel for the backend and PostgreSQL for the database."
+        "desc-cvform": "The Curriculum Vitae Form project makes it easy to create standout professional CVs effortlessly",
+        "portofolioyangsayabuat": "All Projects I Have Ever Made",
+        "descportofolioyangsayabuat": "A Collection of My Works and Achievements",
+        "descportopage": "Most of the projects I’ve developed are built using React.js and Tailwind CSS, supported by various UI component libraries. Some projects also leverage Laravel for the backend and PostgreSQL for the database."
+    },
+    "Kontak": {
+        "title": "Let’s Build Something Great Together",
+        "subtitle": "If you have an exciting project or just want to chat, I’m all ears!",
+        "kirim": "Send",
+        "hubungisaya": "Get in Touch"
     }
 }

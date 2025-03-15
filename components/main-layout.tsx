@@ -9,11 +9,33 @@ import SwitchDarkMode from './switch-theme';
 import { ThemeAnimationType } from '@/lib/theme';
 import SwitchLang from './switch-lang';
 import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle } from './ui/sheet';
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { usePathname } from 'next/navigation';
 import { AnimatePresence, motion } from 'framer-motion'
 import PageTransition from './page-transition';
 import ClickSpark from './ui/ClickSpark';
+import { useTranslations } from 'next-intl';
+import { MdOutlineLocationOn } from "react-icons/md";
+import SocialButton from './social-button';
+
+const menuItems = [
+    {
+        label: 'Home',
+        href: '/home',
+    },
+    {
+        label: 'About',
+        href: '/about',
+    },
+    {
+        label: 'Portofolio',
+        href: '/portofolio',
+    },
+    {
+        label: 'Contact',
+        href: '/contact',
+    }
+]
 
 export default function MainLayout({ children }: { children: React.ReactNode }) {
     const [isHovered, setIsHovered] = useState(false);
@@ -38,25 +60,6 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-
-    const menuItems = [
-        {
-            label: 'Home',
-            href: '/home',
-        },
-        {
-            label: 'About',
-            href: '/about',
-        },
-        {
-            label: 'Portofolio',
-            href: '/portofolio',
-        },
-        {
-            label: 'Contact',
-            href: '/contact',
-        }
-    ]
 
     return (
         <ClickSpark sparkColor={theme === 'dark' ? 'white' : 'black'}
@@ -133,5 +136,41 @@ export default function MainLayout({ children }: { children: React.ReactNode }) 
                 </div>
             </AnimatePresence >
         </ClickSpark>
+    )
+}
+
+
+export function ContactFooter() {
+    const t = useTranslations("Kontak")
+    return (
+        <div className='w-full h-full bg-foreground text-background rounded-sm mt-5'>
+            <div className='flex flex-row items-center justify-between py-2 px-3'>
+                <div className=''>
+                    <div className=''>
+                        <h1 className='text-xl font-black'>{t('hubungisaya')}</h1>
+                        <h1 className='text-base font-semibold'>Untung Budiman</h1>
+                    </div>
+                    <div className=''>
+                        <h1 className='flex flex-row items-center justify-start gap-1.5 text-sm'><AiOutlineMail className='hidden lg:block' /> untungbudiman.dev@gmail.com</h1>
+                        <h1 className='flex flex-row items-center justify-start gap-1.5 text-sm'><AiOutlinePhone className='hidden lg:block' /> +62 85184808340</h1>
+                        <h1 className='flex flex-row items-center justify-start gap-1.5 text-sm'><MdOutlineLocationOn className='hidden lg:block' /> Yogyakarta, Indonesia</h1>
+                    </div>
+                </div>
+                <div className='flex flex-col items-center justify-end'>
+                    <h1 className='text-base font-bold'>Navigation</h1>
+                    <div className='flex flex-col items-center justify-center'>
+                        {menuItems.map((item, index) => {
+                            return (
+                                <Link key={index} href={item.href}>{item.label}</Link>
+                            )
+                        })}
+                    </div>
+                </div>
+                <div className='flex items-center justify-between flex-col gap-1 h-full'>
+                    <h1 className='text-sm font-bold'>Social</h1>
+                    <SocialButton className='gap-2' />
+                </div>
+            </div>
+        </div>
     )
 }
